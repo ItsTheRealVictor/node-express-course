@@ -1,7 +1,9 @@
 const mongoose = require('mongoose')
 
-const connectDB = (url) => {
-  return mongoose.connect(url, {
+
+
+const connectionDB = (url) => {
+  return mongoose.connect(url , {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
@@ -9,4 +11,4 @@ const connectDB = (url) => {
   })
 }
 
-module.exports = connectDB
+module.exports = connectionDB
